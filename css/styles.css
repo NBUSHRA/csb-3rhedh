@@ -1,0 +1,231 @@
+@import "_reset.css";
+/*  Color palette
+    -----------------------
+    color       HEX code  RGB code
+    -------------------------------------
+    red:      	#960001	  rgb(150,0,1)
+    yellow:     #e2e55f	  rgb(226,229,95)
+    green:      #96c25f	  rgb(150,194,95)
+    blue:       #5582c6	  rgb(85,130,198)
+    purple: 	  #79519f	  rgb(121,81,159) 
+
+    fonts
+    -----------------------
+    headings:   Cabin
+    body:       Roboto
+
+    font-sizes:
+    -----------------------
+    h1:   70px
+    h2:   36px
+    h3    24px
+    body: 17px (all other text)
+
+    breakpoints
+    -----------------------
+    desktop: 1200px
+    
+    max-width of the content is 1400px
+*/
+
+/* Add all of your styles here */
+body {
+  color: white;
+  font-family: "Google Sans", "Roboto Slab";
+  background-color: #5582c6;
+  max-width: 1400px;
+  max-height: 1200px;
+}
+.main-content-container {
+  max-width: 1400px;
+  max-height: 1200px;
+  padding: 100px;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  background-color: #e7faff;
+  color: #960001;
+  font-family: "Cabin";
+  font-size: 70px;
+  width: 400px;
+  margin-left: 30%;
+  margin-top: 15px;
+  text-align: center;
+  padding-bottom: 10px;
+  font-weight: 1000;
+}
+h2 {
+  color: #960001;
+  font-family: "Cabin";
+  font-size: 36px;
+  font-weight: 1000;
+}
+h3 {
+  color: #960001;
+  font-family: "Cabin";
+  font-size: 24px;
+  font-weight: 800;
+}
+h4 {
+  color: #960001;
+  font-family: "Cabin";
+  font-size: 20px;
+}
+.banner-container {
+  width: 100vw;
+  height: 440px;
+
+  overflow: hidden;
+  margin-bottom: -300px;
+}
+.banner-image {
+  width: 100vw;
+  max-width: 1400;
+}
+.poster-image {
+  width: 325px;
+  height: 500px;
+  margin-bottom: -95px;
+}
+.sinopsys_paragraph {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.title-container {
+  margin-bottom: 10px;
+}
+.character-profiles-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.character-forky-container,
+.character-buzz-container,
+.character-bopeep-container,
+.character-woody-container {
+  margin-top: 10px;
+}
+.description-container {
+  width: 540px;
+  height: 250px;
+  margin-bottom: -50px;
+}
+.profile-paragraph {
+  width: 560px;
+}
+.played-by {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+.image-character {
+  width: 125px;
+  height: 125px;
+  float: left;
+  margin-right: 20px;
+}
+.character-woody-container,
+.character-buzz-container,
+.character-bopeep-container,
+.character-forky-container {
+  color: white;
+  transition: background-color, 2s ease-out 100ms;
+}
+.character-woody-container:hover,
+.character-buzz-container:hover,
+.character-bopeep-container:hover,
+.character-forky-container:hover {
+  color: #393c3d;
+  background-color: #b9d3fa;
+  border: 1px;
+}
+.yellow-separator {
+  background-color: #a8c655;
+  height: 5px;
+}
+.profile-link {
+  font-weight: 900;
+  color: yellow;
+  margin-left: 5px;
+}
+.woody-comment {
+  font-weight: 900;
+  margin-left: 90px;
+}
+.woody-comment:hover {
+  font-weight: 1200;
+  color: #79519f;
+}
+.small-banner-container {
+  margin-top: 90px;
+  color: #960001;
+  font-family: "Roboto", sans-serif;
+  background-color: #a8c655;
+  display: flex;
+  height: 60px;
+  align-items: center;
+}
+.title-comments-container {
+  height: 40px;
+  margin-top: 30px;
+}
+.rating-opinion-label {
+  padding-top: 50px;
+}
+.rating-floating-label {
+  height: 40px;
+  width: 350px;
+  padding-top: 15px;
+}
+.rating-opinion-input {
+  display: block;
+  width: 346px;
+  height: 38px;
+  background-color: white;
+  border: none;
+  border-bottom: 1px solid white;
+
+  -webkit-appearance: none;
+
+  -moz-appearance: none;
+}
+.rating-separator {
+  height: 10px;
+}
+.rating-button {
+  height: 40px;
+  width: 350px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.rating-button:focus {
+  background-color: #79519f;
+}
+.rating-button:hover {
+  background-color: transparent;
+}
+.footer-container {
+  width: 100vw;
+}
+.ratingAnswer {
+  height: 80%;
+  margin-left: 500px;
+  font-size: 24px;
+  font-weight: 800;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
